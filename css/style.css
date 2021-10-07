@@ -11,6 +11,7 @@ html {
 body {
   text-transform: capitalize;
   background-color: #FCFCFC;
+  overflow-x: hidden;
   font-family: 'Circular Std Book', sans-serif;
 }
 
@@ -52,6 +53,18 @@ body {
 .header-link:hover img {
   color: #56597A;
   opacity: 0.5;
+}
+
+.back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/background111.svg);
+  position:absolute;
+  top: 0;
+  right: 0;
+  padding-bottom: 350px;
+  z-index: -5;
+
 }
 
 .catch {
@@ -99,8 +112,8 @@ body {
 }
 
 .btn:hover {
-  padding: 12px 48px 12px 15px;
   transition: padding 1s ease;
+  opacity: 0.9;
 }
 
 .realative {
@@ -247,7 +260,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 52px;
-  line-height: 62px;
+  line-height: 58px;
   color: #56597A;
   margin-top: 5px;
   margin-bottom: 25px;
@@ -257,22 +270,26 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
   color: #919299;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.paint img {
+  margin-top: 55px;
 }
 
 .unf {
-  margin-top: 180px;
+  margin-top: 125px;
 }
 
 .persn-title {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 32px;
+  line-height: 28px;
   color: #56597A;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .persn-txt {
@@ -287,6 +304,22 @@ body {
 .take {
   margin-top: 150px;
   margin-bottom: 150px;
+}
+
+.blog {
+  position: relative;
+}
+
+.blog-title::before {
+  width: 250px;
+  height:   250px;
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/ball.svg");
+  top: 0;
+  left: -25px;
 }
 
 .blog-title {
@@ -308,6 +341,7 @@ body {
 
 .hero-form {
   padding: 25px;
+  margin-bottom: 55px;
 }
 
 .ball {
@@ -327,7 +361,7 @@ body {
   padding: 20px 20px;
   border: none;
   border-radius: 5px;
-  drop-shadow: (20px 20px 40px rgba(205, 205, 205, 0.25));
+  box-shadow: (20px 20px 40px rgba(205, 205, 205, 0.25));
 }
 
 .all {
@@ -375,6 +409,10 @@ body {
   font-size: 22px;
 }
 
+.social .bx {
+  color: rgba(0, 0, 0, 0.658);
+}
+
 .footer-list>* {
   display: block;
 }
@@ -391,16 +429,32 @@ body {
 .footer-list a {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   color: #919299;
-  margin-right: 80px;
+  margin-right: 115px;
+}
+
+#last {
+  background-color: #F78CB6;
 }
 
 .sale {
-  background-color: #F78CB6;
-  padding: 5px;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.last-form::before {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/Web.svg');
+  position: relative;
+  top: 25px;
+  left: -40px;
+  background-size: cover;
 }
 
 .mirage {
@@ -410,4 +464,17 @@ body {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+}
+
+
+
+.footer__bg {
+  width: 1500px;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-image: url(../img/mountain.svg);
+  background-position: left -70px bottom;
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 100px;
 }
